@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Avrasya Dernek — Site Tasarımı v1</title>
+<meta name="description" content="Avrasya Dernek web sitesi için tasarım sistemi önizlemesi.">
+<link rel="icon" href="assets/img/avrasya-logo.png" type="image/png">
+<link rel="stylesheet" href="assets/css/avrasya.css">
+<link rel="stylesheet" href="assets/css/preview.css">
+</head>
+<body>
+
+<div class="hidden lg:block">
+  <div class="av-shell topbar" style="min-height:40px">
+    <span>İyilik, bilgiyle ve dostlukla büyür.</span>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="tasarim.html">Tasarım Sistemi</a>
+      <a href="#">İletişim</a>
+    </nav>
+  </div>
+</div>
+
+<header class="sticky">
+  <nav class="av-nav">
+    <a class="av-nav-logo" href="index.html">
+      <img src="assets/img/avrasya-logo.png" width="40" height="40" alt="">
+      <span class="brand">Avrasya</span>
+    </a>
+    <div class="av-nav-links">
+      <a href="#faaliyetler">Faaliyetler</a>
+      <div class="av-nav-drop">
+        <a href="#bagislar">Bağışlar</a>
+        <div class="absolute top-full w-72" hidden>
+          <a href="tasarim.html">Eğitim</a>
+          <a href="tasarim.html">Kurban</a>
+          <a href="tasarim.html">Ramazan-ı Şerif</a>
+          <a href="tasarim.html">Sadaka</a>
+          <a href="tasarim.html">Kalıcı Eserler</a>
+          <a href="tasarim.html">Su Kuyusu</a>
+          <a href="tasarim.html">Kışlık İhtiyaçlar</a>
+        </div>
+      </div>
+      <a href="#galeri">Galeri</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+    </div>
+    <a class="av-header-cta" href="tasarim.html">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12 21s-8.5-5.1-8.5-11.2A4.8 4.8 0 0 1 12 6.9a4.8 4.8 0 0 1 8.5 2.9C20.5 15.9 12 21 12 21Z"/></svg>
+      Bağış Yap
+    </a>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="av-hero" style="--hero-img:url('assets/img/activities/ramazan.jpg')">
+    <div class="av-shell av-hero-copy">
+      <p class="av-eyebrow av-eyebrow-light">Avrasya Eğitim Kültür ve Dostluk Derneği</p>
+      <h1>İyiliğin ulaştığı <em>sekiz alan.</em></h1>
+      <p>Avrasya Derneği; ihtiyacı olan insanlara hiçbir ayrım gözetmeden ulaşan, toplum yararını ve insan onurunu merkeze alan gönüllü bir sosyal hizmet kuruluşudur.</p>
+      <div class="av-hero-actions">
+        <a class="av-btn av-btn-orange" href="tasarim.html">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17" aria-hidden="true"><path d="M12 21s-8.5-5.1-8.5-11.2A4.8 4.8 0 0 1 12 6.9a4.8 4.8 0 0 1 8.5 2.9C20.5 15.9 12 21 12 21Z"/></svg>
+          Bağış yap
+        </a>
+        <a class="av-btn av-btn-ghost" href="tasarim.html">Gönüllü ol
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- İstatistikler -->
+  <section class="avh-stats" aria-label="Rakamlarla Avrasya">
+    <div class="av-shell">
+      <dl class="avh-stats-grid">
+        <div class="avh-stat"><dd>25<span>+</span></dd><dt>Yıl</dt></div>
+        <div class="avh-stat"><dd>41</dd><dt>Ülke</dt></div>
+        <div class="avh-stat"><dd>2.000.000<span>+</span></dd><dt>İyilik</dt></div>
+        <div class="avh-stat"><dd>120</dd><dt>Kalıcı Eser</dt></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Faaliyet alanları -->
+  <section class="avh-section avh-areas" id="faaliyetler" aria-labelledby="avh-areas-title">
+    <div class="av-shell">
+      <header class="av-section-head">
+        <div>
+          <p class="av-eyebrow">Faaliyet alanlarımız</p>
+          <h2 id="avh-areas-title">İyiliğin ulaştığı <em>sekiz alan.</em></h2>
+        </div>
+        <a class="av-link-pill" href="tasarim.html">Tüm faaliyetler
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </header>
+      <ul class="avh-areas-grid">
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/egitim.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Eğitim</strong><span>Hayallere açılan bir kapı.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/kurban.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Kurban</strong><span>Paylaştıkça çoğalan bereket.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/ramazan.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Ramazan-ı Şerif</strong><span>Aynı iyilikte buluşan sofralar.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/sadaka.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Sadaka</strong><span>Küçük bir adım, büyük bir iyilik.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/kalici-eserler.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Kalıcı Eserler</strong><span>Bugünden yarına kalan izler.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/su-kuyusu.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Su Kuyusu</strong><span>Her damlada yeniden hayat.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/kislik.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Kışlık İhtiyaçlar</strong><span>Soğuk günlere sıcak bir dokunuş.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+        <li><a class="avh-area" href="tasarim.html">
+          <span class="avh-area-icon"><img src="assets/img/icons/diger.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span>
+          <span class="avh-area-text"><strong>Diğer Faaliyetler</strong><span>İyiliğin daha nice yolu var.</span></span>
+          <span class="avh-area-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Öne çıkan bağışlar -->
+  <section class="avh-section avh-featured" id="bagislar" aria-labelledby="avh-featured-title">
+    <div class="av-shell">
+      <header class="av-section-head">
+        <div>
+          <p class="av-eyebrow">Öne çıkan bağışlar</p>
+          <h2 id="avh-featured-title">Bugün bir hayata <em>dokunun.</em></h2>
+        </div>
+        <a class="av-link-pill" href="tasarim.html">Tüm bağışlar
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </header>
+      <div class="avh-featured-grid">
+        <article class="avh-card">
+          <a class="avh-card-visual" href="tasarim.html"><img src="assets/img/activities/kurban.jpg" alt="" width="640" height="440" loading="lazy" decoding="async"></a>
+          <div class="avh-card-body">
+            <h3><a href="tasarim.html">Vacip Kurban</a></h3>
+            <p>Kurban hisseleri 7 ülkede ihtiyaç sahiplerine ulaştırılıyor.</p>
+            <a class="avh-card-cta" href="tasarim.html"><span><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M12 21s-8.5-5.1-8.5-11.2A4.8 4.8 0 0 1 12 6.9a4.8 4.8 0 0 1 8.5 2.9C20.5 15.9 12 21 12 21Z"/></svg> Bağış yap</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+        <article class="avh-card">
+          <a class="avh-card-visual" href="tasarim.html"><img src="assets/img/activities/ramazan.jpg" alt="" width="640" height="440" loading="lazy" decoding="async"></a>
+          <div class="avh-card-body">
+            <h3><a href="tasarim.html">Ramazan Kumanyası</a></h3>
+            <p>Binlerce aileye sıcak iftar sofraları ve kumanya paketleri.</p>
+            <a class="avh-card-cta" href="tasarim.html"><span><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M12 21s-8.5-5.1-8.5-11.2A4.8 4.8 0 0 1 12 6.9a4.8 4.8 0 0 1 8.5 2.9C20.5 15.9 12 21 12 21Z"/></svg> Bağış yap</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+        <article class="avh-card">
+          <a class="avh-card-visual" href="tasarim.html"><img src="assets/img/activities/su-kuyusu.jpg" alt="" width="640" height="440" loading="lazy" decoding="async"></a>
+          <div class="avh-card-body">
+            <h3><a href="tasarim.html">Su Kuyusu</a></h3>
+            <p>Her damlada yeniden hayat; temiz suya erişimi olmayan topluluklara.</p>
+            <a class="avh-card-cta" href="tasarim.html"><span><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M12 21s-8.5-5.1-8.5-11.2A4.8 4.8 0 0 1 12 6.9a4.8 4.8 0 0 1 8.5 2.9C20.5 15.9 12 21 12 21Z"/></svg> Bağış yap</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+        <article class="avh-card">
+          <a class="avh-card-visual" href="tasarim.html"><img src="assets/img/activities/kislik.jpg" alt="" width="640" height="440" loading="lazy" decoding="async"></a>
+          <div class="avh-card-body">
+            <h3><a href="tasarim.html">Kışlık İhtiyaçlar</a></h3>
+            <p>Soğuk kış günlerinde kömür ve sıcak bir yuva desteği.</p>
+            <a class="avh-card-cta" href="tasarim.html"><span><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M12 21s-8.5-5.1-8.5-11.2A4.8 4.8 0 0 1 12 6.9a4.8 4.8 0 0 1 8.5 2.9C20.5 15.9 12 21 12 21Z"/></svg> Bağış yap</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hakkımızda -->
+  <section class="avh-section avh-story" id="hakkimizda" aria-labelledby="avh-story-title">
+    <div class="av-shell avh-story-grid">
+      <figure class="avh-story-visual">
+        <img src="assets/img/about/ilkelerimiz.jpg" alt="Avrasya gönüllüleri sahada" width="900" height="700" loading="lazy" decoding="async">
+        <figcaption><strong>25</strong><span>yıldır<br>iyilik yolunda</span></figcaption>
+      </figure>
+      <div class="avh-story-copy">
+        <p class="av-eyebrow">Biz kimiz?</p>
+        <h2 id="avh-story-title">Çeyrek asırdır <em>yoldayız.</em></h2>
+        <p class="avh-story-lead">Avrasya Eğitim Kültür ve Dostluk Derneği; ihtiyacı olan insanlara hiçbir ayrım gözetmeden ulaşan, toplum yararını ve insan onurunu merkeze alan gönüllü bir sosyal hizmet kuruluşudur.</p>
+        <ul class="avh-story-list">
+          <li><strong>İnsan merkezli yaklaşım</strong><span>İhtiyaç sahibi insanlara hiçbir ayrım gözetmeden ulaşırız.</span></li>
+          <li><strong>Gönüllülük esası</strong><span>Faaliyetlerimizi gönüllülük temelinde gerçekleştiririz.</span></li>
+          <li><strong>Şeffaflık ve güven</strong><span>Tüm süreçleri açık, izlenebilir ve hesap verebilir biçimde yürütürüz.</span></li>
+        </ul>
+        <a class="av-btn av-btn-navy" href="tasarim.html">Bizi tanıyın
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Haberler -->
+  <section class="avh-section avh-news" id="galeri" aria-labelledby="avh-news-title" style="padding-top:88px">
+    <div class="av-shell">
+      <header class="av-section-head">
+        <div>
+          <p class="av-eyebrow">Haberler ve duyurular</p>
+          <h2 id="avh-news-title">Sahadan <em>son gelişmeler.</em></h2>
+        </div>
+        <a class="av-link-pill" href="tasarim.html">Tüm haberler
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </header>
+      <div class="avh-news-grid">
+        <a class="avh-news-item" href="tasarim.html">
+          <img class="avh-news-thumb" src="assets/img/activities/kalici-eser.jpg" alt="" loading="lazy" decoding="async">
+          <span class="avh-news-text">
+            <span class="avh-news-type">Duyuru · 19.09.2026</span>
+            <strong>Avrasya Yaz Okulu başvuruları başladı</strong>
+            <span class="avh-news-excerpt">Yurt içi ve yurt dışında düzenlenen yaz okullarına katılım için başvurular açıldı.</span>
+          </span>
+          <span class="avh-news-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="avh-news-item" href="tasarim.html">
+          <img class="avh-news-thumb" src="assets/img/activities/su-kuyusu.jpg" alt="" loading="lazy" decoding="async">
+          <span class="avh-news-text">
+            <span class="avh-news-type">Haber · 12.09.2026</span>
+            <strong>Yeni su kuyuları hizmete açıldı</strong>
+            <span class="avh-news-excerpt">Afrika'da açılan su kuyuları, binlerce kişiye temiz su sağlıyor.</span>
+          </span>
+          <span class="avh-news-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="avh-news-item" href="tasarim.html">
+          <time class="avh-news-date" datetime="2026-09-05"><strong>05</strong><span>Eyl 26</span></time>
+          <span class="avh-news-text">
+            <span class="avh-news-type">Duyuru</span>
+            <strong>Kurban 2026 hisseleri açıldı</strong>
+            <span class="avh-news-excerpt">Bu yılın kurban hisseleri belirlendi; bağışlarınız 7 ülkede ulaştırılıyor.</span>
+          </span>
+          <span class="avh-news-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="avh-news-item" href="tasarim.html">
+          <time class="avh-news-date" datetime="2026-08-27"><strong>27</strong><span>Ağu 26</span></time>
+          <span class="avh-news-text">
+            <span class="avh-news-type">Haber</span>
+            <strong>Gönüllü buluşması İstanbul'da</strong>
+            <span class="avh-news-excerpt">Yeni dönem gönüllü oryantasyon programı düzenlendi.</span>
+          </span>
+          <span class="avh-news-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bülten -->
+  <section aria-labelledby="bulten-title">
+    <div class="relative">
+      <h2 id="bulten-title">Bültenimize abone olun</h2>
+      <p>Faaliyetlerimizden ve kampanyalarımızdan ilk siz haberdar olun.</p>
+      <form action="/tr/bulten" method="post">
+        <input type="email" name="email" placeholder="E-posta adresiniz" aria-label="E-posta adresiniz">
+        <button type="submit">Abone ol</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="avh-cta-wrap" aria-labelledby="avh-cta-title">
+    <div class="av-shell">
+      <div class="avh-cta">
+        <img src="assets/img/activities/kislik.jpg" alt="" loading="lazy" decoding="async">
+        <div class="avh-cta-copy">
+          <p class="av-eyebrow av-eyebrow-light">Birlikte daha güçlüyüz</p>
+          <h2 id="avh-cta-title">Her bağış, bir hayata dokunuyor.</h2>
+          <p>Siz de bu güzel harekete katılın; iyiliği birlikte büyütelim.</p>
+          <div class="avh-cta-actions">
+            <a class="av-btn av-btn-orange" href="tasarim.html"><svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17" aria-hidden="true"><path d="M12 21s-8.5-5.1-8.5-11.2A4.8 4.8 0 0 1 12 6.9a4.8 4.8 0 0 1 8.5 2.9C20.5 15.9 12 21 12 21Z"/></svg> Bağış yap</a>
+            <a class="av-btn av-btn-ghost" href="tasarim.html">Gönüllü ol <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="av-shell">
+    <div class="footer-brand">
+      <img src="assets/img/avrasya-logo.png" width="48" height="48" alt="">
+      <p>Avrasya Eğitim Kültür ve Dostluk Derneği; iyiliği bilgiyle ve dostlukla büyüten gönüllü bir sosyal hizmet kuruluşudur.</p>
+    </div>
+    <div>
+      <h4>Faaliyetler</h4>
+      <ul>
+        <li><a href="tasarim.html">Eğitim</a></li>
+        <li><a href="tasarim.html">Kurban</a></li>
+        <li><a href="tasarim.html">Sadaka</a></li>
+        <li><a href="tasarim.html">Su Kuyusu</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Kurumsal</h4>
+      <ul>
+        <li><a href="tasarim.html">Hakkımızda</a></li>
+        <li><a href="tasarim.html">Faaliyetlerimiz</a></li>
+        <li><a href="tasarim.html">Gönüllü Ol</a></li>
+        <li><a href="tasarim.html">Tasarım Sistemi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>İletişim</h4>
+      <ul>
+        <li><a href="tasarim.html">Bize Ulaşın</a></li>
+        <li><a href="tasarim.html">Bağış Yap</a></li>
+        <li><a href="tasarim.html">Bülten</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="av-shell">
+      <span>© 2026 Avrasya Eğitim Kültür ve Dostluk Derneği</span>
+      <span>Tasarım önizlemesi — GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

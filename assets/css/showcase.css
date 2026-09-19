@@ -1,0 +1,47 @@
+/* ---------- Tasarım sistemi sayfası bileşenleri ---------- */
+.sw-palette { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.sw-swatch {
+    display: flex; flex-direction: column; justify-content: flex-end; gap: 4px;
+    min-height: 96px; padding: 16px; border-radius: 14px;
+    background: var(--sw, #fff); color: #fff;
+    box-shadow: 0 0 0 1px #e4ebf0, 0 18px 34px -26px #0b2f4a59;
+    outline: 1px solid #ffffff2e; outline-offset: -1px;
+}
+.sw-swatch span { font-size: 14px; font-weight: 600; }
+.sw-swatch code { font-size: 12px; opacity: .85; background: #ffffff22; border: 1px solid #ffffff2e; border-radius: 6px; padding: 2px 6px; width: fit-content; }
+
+.sw-type { display: grid; gap: 6px; margin-top: 40px; }
+.sw-t1 { margin: 0; color: #024372; font-size: clamp(30px, 3.1vw, 42px); font-weight: 500; line-height: 1.08; letter-spacing: -.035em; }
+.sw-t2 { margin: 0; color: #10293b; font-size: 22px; }
+.sw-t3 { margin: 0; color: #5d7281; font-size: 16px; line-height: 1.65; }
+.sw-eyebrow { margin: 10px 0 0; font-size: 11.5px; font-weight: 600; letter-spacing: .2em; color: #6b808d; }
+
+.sw-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 26px; }
+.sw-on-dark { display: inline-flex; align-items: center; padding: 14px 18px; border-radius: 16px; background: #021e35; }
+.sw-chip {
+    display: inline-flex; align-items: center; min-height: 42px; padding: 0 20px;
+    border: 1px solid #e4ebf0; border-radius: 999px; background: #fff;
+    color: #024372; font-size: 14px; font-weight: 600; line-height: 1;
+    transition: border-color .25s, background-color .25s, color .25s;
+}
+.sw-chip:hover { background: #f5f8fa; border-color: #b9cad6; }
+
+.sw-form { display: grid; gap: 18px; max-width: 560px; }
+.sw-field { display: grid; gap: 7px; }
+.sw-field > span { font-size: 13.5px; font-weight: 600; color: #2c4557; }
+.sw-field input:not([type="checkbox"]):not([type="radio"]),
+.sw-field textarea, .sw-field select {
+    width: 100%; padding: 11px 14px; border: 1px solid #c7d3dd; border-radius: 12px;
+    background: #fbfcfd; color: #10293b; transition: border-color .2s, box-shadow .2s, background-color .2s;
+}
+.sw-field input:hover, .sw-field select:hover { border-color: #aebfcc; }
+.sw-field input:focus, .sw-field select:focus {
+    outline: 0; border-color: #024372; background: #fff; box-shadow: 0 0 0 4px #02437221;
+}
+.sw-field input[type="checkbox"] { accent-color: #024372; width: 18px; height: 18px; }
+.sw-check { display: flex; flex-direction: row; align-items: center; gap: 10px; }
+.sw-check > span { font-weight: 500; color: #3d5263; }
+
+@media (max-width: 860px) {
+    .sw-palette { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
