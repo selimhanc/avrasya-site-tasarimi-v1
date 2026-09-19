@@ -1,0 +1,9 @@
+/node_modules
+/vendor
+/public/build
+/storage
+/.env
+.env.backup
+.env.production
+.DS_Store
+*.log
