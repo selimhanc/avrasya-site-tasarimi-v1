@@ -1,0 +1,39 @@
+{
+  "_effect-cube-CxN7Fb1s.js": {
+    "file": "assets/effect-cube-CxN7Fb1s.js",
+    "name": "effect-cube",
+    "css": [
+      "assets/effect-cube-DLLoD87Q.css"
+    ]
+  },
+  "_effect-cube-DLLoD87Q.css": {
+    "file": "assets/effect-cube-DLLoD87Q.css",
+    "src": "_effect-cube-DLLoD87Q.css"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-D_KtUxMs.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/about.js": {
+    "file": "assets/about-Bn-482id.js",
+    "name": "about",
+    "src": "resources/js/about.js",
+    "isEntry": true,
+    "imports": [
+      "_effect-cube-CxN7Fb1s.js"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C2AWGC4O.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_effect-cube-CxN7Fb1s.js"
+    ],
+    "css": [
+      "assets/app-5VYFpz3h.css"
+    ]
+  }
+}
